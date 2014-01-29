@@ -85,3 +85,38 @@ body {
 .bs-example {
     padding-top: 15px ;
 }
+
+/*
+ * Override media for .sl-horizontal from min-width: 768 to 320
+ */
+
+@media (min-width: 320px) {
+    .dl-horizontal dt {
+        float: left;
+        width: 160px;
+        overflow: hidden;
+        clear: left;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .dl-horizontal dd {
+        margin-left: 180px;
+    }
+    .dl-horizontal dd:before,
+    .dl-horizontal dd:after {
+        display: table;
+        content: " ";
+    }
+    .dl-horizontal dd:after {
+        clear: both;
+    }
+    .dl-horizontal dd:before,
+    .dl-horizontal dd:after {
+        display: table;
+        content: " ";
+    }
+    .dl-horizontal dd:after {
+        clear: both;
+    }
+}
