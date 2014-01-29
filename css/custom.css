@@ -1,0 +1,87 @@
+/*!
+ * Custom CSS
+ * for POC of list views
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+ /* Folks looking to create fully fluid layouts (meaning your site
+  * stretches the entire width of the viewport) must wrap their grid
+  * content in a containing element with padding: 0 15px; to offset
+  * the margin: 0 -15px; used on .rows.
+  */
+.full-width {
+    padding: 0 15px;
+}
+
+/*
+ * Main navigation
+ *
+ * Turn the `.navbar` at the top of the docs blue.
+ */
+
+.custom-nav {
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    background-color: #0078B6;
+    border-color: #463265;
+    box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+.custom-nav .navbar-collapse {
+    border-color: #463265;
+}
+.custom-nav .navbar-brand {
+    color: #fff;
+}
+.custom-nav .navbar-nav > li > a {
+    color: #cdbfe3;
+}
+.custom-nav .navbar-nav > li > a:hover {
+    color: #fff;
+}
+.custom-nav .navbar-nav > .active > a,
+.custom-nav .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #0078B6;
+}
+.custom-nav .navbar-toggle {
+    border-color: #563d7c;
+}
+.custom-nav .navbar-toggle:hover {
+    background-color: #0078B6;
+    border-color: #463265;
+}
+
+/*
+ * Light grey background
+ */
+
+body {
+    background-color: lightgrey;
+}
+
+/*
+ * White background
+ */
+
+.custom-list {
+    background-color: #ffffff;
+    border-color: #0078B6;
+}
+
+/*
+ * Override to not show word EXAMPLE
+ */
+
+.bs-example:after {
+    content: "" ;
+    position: absolute;
+    top:  0px ;
+    left: 0px ;
+    font-size: 12px;
+    font-weight: bold;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.bs-example {
+    padding-top: 15px ;
+}
